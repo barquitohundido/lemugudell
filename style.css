@@ -1,0 +1,222 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  color:#333333;
+}
+  @font-face {
+    font-family: HelveticaE;
+    src: url("/fonts/Helvetica Neue LT 53 Extended.ttf");
+    }
+    @font-face {
+    font-family: BodoniPoster;
+    src: url("/fonts/BodoniStd-Poster.otf");
+    }
+body{
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  overflow-x: hidden;
+}
+h1{
+  font-family: BodoniPoster;
+  font-size: clamp(20px 100px);
+  padding-bottom: 1rem;
+}
+h4, p{
+  font-family: HelveticaE;
+  text-transform: uppercase;
+}
+h3{
+  font-family: BodoniPoster;
+  text-transform: uppercase;
+  letter-spacing: 1px
+}
+header {
+  align-items: center;
+  justify-content: center;
+  text-wrap: balance;
+  padding: 1rem;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+nav button{
+  border: 0;
+  color:#333333;
+  font-variant: small-caps;
+  background-color: white;
+  transition: opacity 0.3s ease;
+}
+nav button:hover{
+  opacity: 0.5;
+}
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: center;
+  font-family: HelveticaE;
+  gap: 0.4rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+.nav-links.active{
+  color: lightgrey;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 0.60rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: lightgrey;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  color: #333333;
+  border: 1px solid #333333;
+  background-color: white;
+  padding: 0.75rem 0;
+  margin-bottom: 20px;
+}
+.marquee-content {
+  display: inline-flex;
+  animation: marquee-scroll 15s linear infinite;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.marquee-content span {
+  padding: 0 0.5rem;
+}
+
+/* SECCION INFO */
+.info{
+letter-spacing: 1px;
+margin-top: 2.5rem;
+margin-bottom: 2.5rem;
+}
+.icon{
+  padding-top: 1rem;
+  width: clamp(1.5rem, 10vw, 3.5rem);
+  height: auto;
+}
+.info p {
+  padding: 10px;
+}
+.info iframe {
+  padding: 1rem 1rem 0rem 1rem;
+  width: 100%;
+  height: clamp(7rem, 40vh, 10rem);
+  border: none;
+}
+.contador-container {
+  width: 100%;
+  max-width: 450px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.reloj-grid {
+  font-family: BodoniPoster;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  text-align: center;
+}
+.tiempo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 0.5rem;
+}
+.tiempo span {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+.tiempo p {
+  margin: 0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.galeria img {
+  width: 100%;
+  object-fit: cover;
+}
+.itinerario{
+  margin-top: 1rem;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  gap: 0.5rem;
+  display: block;
+}
+.itinerario p{
+  padding: 10px;
+}
+.itinerario h3{
+  padding-bottom: 10px;
+  gap: 1rem;
+}
+.dresscode, .tarjeta, .asistencia{
+  padding-top: 20px;
+} 
+.plan{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+}
+.asistencia iframe{
+  width: 100%;
+  height: 700px;
+  border: none;
+}
+
+footer{
+  margin-top: 20px;
+  padding: 50px;
+  background-color: whitesmoke;
+  color: #333333;
+}
+
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+  .galeria {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); } /* -50% porque el contenido está duplicado */
+}
