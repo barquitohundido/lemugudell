@@ -7,11 +7,11 @@ html{
   color:#333333;
 }
   @font-face {
-    font-family: HelveticaE;
+    font-family: Helvetica;
     src: url("/fonts/Helvetica Neue LT 53 Extended.ttf");
     }
     @font-face {
-    font-family: BodoniPoster;
+    font-family: Bodoni;
     src: url("/fonts/BodoniStd-Poster.otf");
     }
 body{
@@ -24,26 +24,38 @@ main{
   padding-bottom: 30px;
 }
 h1{
-  font-family: BodoniPoster;
-  font-size: clamp(20px 100px);
-  padding-bottom: 1rem;
-  margin-top: 0px;
-  margin-bottom: 10px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1;
+  font-size: 15vw;
+  text-wrap: balance;
+  font-family: Helvetica;
+  padding-bottom: 20px;
 }
 h2{
-  font-family: BodoniPoster;
+  padding-top: 20px;
+  font-family: Helvetica;
   text-transform: uppercase;
-  letter-spacing: 1px
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1;
+  text-wrap: balance;
+  font-size: 10vw;
 }
 a{
   text-decoration: none;
-  font-family: HelveticaE;
+  font-family: Helvetica;
   text-transform: uppercase;
   color: #333333;
 }
 header {
   background-color: white;
-  padding-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 nav {
   display: flex;
@@ -51,9 +63,11 @@ nav {
   flex-direction: column;
   align-items: center;
   position: relative;
+  color:#333333;
 }
 nav button{
-  border: 1px solid white;
+  font-family: Bodoni;
+  border: 1px solid transparent;
   color:#333333;
   text-transform: uppercase;
   letter-spacing:1px;
@@ -71,7 +85,7 @@ nav button:hover{
   list-style: none;
   justify-content: center;
   align-items: center;
-  font-family: HelveticaE;
+  font-family: Helvetica;
   gap: 0.4rem;
   position: absolute;
   top: 100%;
@@ -113,9 +127,13 @@ nav button:hover{
   overflow: hidden;
   white-space: nowrap;
   color: #333333;
-  border: 1px solid #333333;
+  border: 1px, thin #333333;
+  border-style: dashed;
+  border-left: none;
+  border-right: none;
   background-color: white;
   padding: 0.75rem 0;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 .marquee-content {
@@ -130,7 +148,7 @@ nav button:hover{
 }
 .btn {
   display: inline-block;
-  background-color: white;
+  background-color: transparent;
   color: #333333;
   letter-spacing: 1px;
   border: 1px solid #333333;
@@ -140,8 +158,9 @@ nav button:hover{
   transition: all 0.3s ease;
 }
 .btn:hover {
-  color: white;
+  color: whitesmoke;
   background-color: #333333;
+  border-radius:50px;
   letter-spacing: 2px;
 }
 .contador-container {
@@ -149,9 +168,10 @@ nav button:hover{
   max-width: 450px;
   margin: 2rem auto;
   padding: 0 1rem;
+  flex-wrap: wrap;
 }
 .reloj-grid {
-  font-family: BodoniPoster;
+  font-family: Bodoni;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.75rem;
@@ -166,7 +186,7 @@ nav button:hover{
 }
 .tiempo span {
   display: block;
-  font-size: 2.2rem;
+  font-size: clamp(3.5rem, 8vw + 1rem, 5rem);
   font-weight: bold;
   line-height: 1;
   margin-bottom: 0.25rem;
@@ -178,6 +198,10 @@ nav button:hover{
   letter-spacing: 1px;
   opacity: 0.8;
 }
+.contador-info p{
+  font-family: Helvetica;
+  letter-spacing: 2px;
+}
 /* SECCION INFO */
 .info{
 justify-content: center;
@@ -187,21 +211,22 @@ margin-top: 50px;
 margin-bottom: 2.5rem;
 letter-spacing: 1px;
 gap: 2px;
+/* background-color: #FFFFF0; */
 }
 .info h3{
-  font-family: HelveticaE;
+  font-family: Helvetica;
   text-transform: uppercase;
   margin-top: 20px;
   margin-bottom: 10px;
   letter-spacing: 2px;
 }
 .info h5{
-  font-family: HelveticaE;
+  font-family: Helvetica;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
 .info p {
-  font-family: HelveticaE;
+  font-family: Helvetica;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -248,20 +273,31 @@ gap: 2px;
   gap: 1rem;
   letter-spacing: 2px;
 }
-
 .asistencia iframe{
   width: 100%;
   height: 700px;
   border: none;
 }
+.form {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 1000px) {
+  .form {
+    width: 100%;
+  }
+}
 footer{
   margin-top: 20px;
-  padding: 50px;
+  padding: 30px;
   background-color: #333333;
   color: whitesmoke;
+  display: block;
+  justify-content: center;
 }
 footer p{
-  font-family: HelveticaE;
+  font-family: Helvetica;
   text-transform: uppercase;
   font-size: 10px;
   letter-spacing: 1px;
@@ -272,7 +308,6 @@ footer a{
 footer a:hover{
   color: grey;
 }
-
 
 /* RESPONSIVE */
 @media (min-width: 768px) {
