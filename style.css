@@ -258,8 +258,9 @@ gap: 2px;
   }
   .contador-container {
     max-width: 1080px;
-  }
-}
+  }}
+
+
 @keyframes carrusel {
   0%, 28% {
     transform: translateX(0);
@@ -285,17 +286,14 @@ gap: 2px;
 .asistencia iframe{
   width: 100%;
   height: 700px;
-  border: none;
 }
 .form {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   margin: 0 auto;
-}
-@media (max-width: 1000px) {
-  .form {
-    width: 100%;
-  }
+  border: none;
 }
 footer{
   margin-top: 20px;
@@ -340,5 +338,11 @@ footer a:hover{
 
   .galeria-track img {
     width: 33.333%;
+  }
+}
+@media (max-width: 1000px) {
+  .form {
+    width: 100%;
+    letter-spacing: 10px;
   }
 }
