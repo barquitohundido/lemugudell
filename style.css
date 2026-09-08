@@ -295,6 +295,19 @@ gap: 2px;
   margin: 0 auto;
   border: none;
 }
+.form button{
+  font-family: Bodoni;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  border: none;
+  border: 1px solid white;
+  color:#333333;
+  border-radius: 20px;
+}
 footer{
   margin-top: 20px;
   padding: 30px;
