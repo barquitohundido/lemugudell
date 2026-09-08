@@ -126,8 +126,8 @@ nav button:hover{
 .marquee-container {
   overflow: hidden;
   white-space: nowrap;
-  color: black;
-  border: 0.5px, solid black;
+  color: #333333;
+  border: 0.5px, solid #333333;
   border-style: dashed;
   border-left: none;
   border-right: none;
@@ -160,8 +160,8 @@ nav button:hover{
 .btn:hover {
   color: whitesmoke;
   background-color: #333333;
+  padding: 12px 15px 12px 15px;
   border-radius:50px;
-  letter-spacing: 2px;
 }
 .contador-container {
   width: 100%;
@@ -208,7 +208,7 @@ nav button:hover{
 justify-content: center;
 padding-left: 50px;
 padding-right: 50px;
-margin-top: 50px;
+margin-top: 20px;
 margin-bottom: 2.5rem;
 letter-spacing: 1px;
 gap: 2px;

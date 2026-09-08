@@ -15,8 +15,8 @@
             <button>Menú</button>
             <ul class="nav-links" id="nav-menu">
                 <li><a href="#info">Información</a></li>
-                <li><a href="#itinerario">Asistencia</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#form">Asistencia</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
             </ul>
         </nav>
     </header>
@@ -35,33 +35,30 @@
         </div>
         <section class="hero">
             <h1>Ana & Lean</h1>
-            <div class="hero-content">
-                <img src="/img/analean-hero-850.jpg" alt="Ana & Lean 2023" class="hero-img">
-            </div>
+            <img class="hero-img" src="/img/analean-hero-850.jpg" alt="Casamiento Ana & Lean">
         </section>
-        <div>
+        <section class="contador-info">
             <h2>Nos casamos!</h2>
-            <section class="contador-info">
-                <div class="contador-container">
-                    <div id="reloj" class="reloj-grid">
-                        <div class="tiempo">
-                            <span id="dias">00</span>
-                            <p>Días</p>
-                        </div>
-                        <div class="tiempo">
-                            <span id="horas">00</span>
-                            <p>Horas</p>
-                        </div>
-                        <div class="tiempo">
-                            <span id="minutos">00</span>
-                            <p>Minutos</p>
-                        </div>
-                        <div class="tiempo">
-                            <span id="segundos">00</span>
-                            <p>Segundos</p>
-                        </div>
+            <div class="contador-container">
+                <div id="reloj" class="reloj-grid">
+                    <div class="tiempo">
+                        <span id="dias">00</span>
+                        <p>Días</p>
+                    </div>
+                    <div class="tiempo">
+                        <span id="horas">00</span>
+                        <p>Horas</p>
+                    </div>
+                    <div class="tiempo">
+                        <span id="minutos">00</span>
+                        <p>Minutos</p>
+                    </div>
+                    <div class="tiempo">
+                        <span id="segundos">00</span>
+                        <p>Segundos</p>
                     </div>
                 </div>
+            </div>
         </section>
         <section class="galeria">
             <div class="galeria-track">
@@ -74,27 +71,29 @@
             </div>
         </section>
         <section id="info" class="info">
-             <div>
-                <img class="icon" src="/img/calendar-icon.webp" alt="Icono Calendario">
+            <div>
+                <img class="icon" id="fecha" src="/img/calendar-icon.webp" alt="Icono Calendario">
                 <h3>CUÁNDO?</h3>
                 <p>27 de Noviembre de 2026</p>
                 <p>14:00h • Apertura</p>
                 <p>20:00h • Cierre</p>
-                <img class="icon" src="/img/ubicacion-icon.webp" alt="Icono Ubicación">
+            </div>
+            <div>
+                <img class="icon" id="ubicacion" src="/img/ubicacion-icon.webp" alt="Icono Ubicación">
                 <h3 id="ubicacion">DÓNDE?</h3>
                 <p>El Limón, Constituyentes 618, Guaymallén, Mza.</p>
-                <a class="btn" href="https://maps.app.goo.gl/UWVHnTXCEhZe137T8?g_st=aw
-">Ubicación</a>
-            <div class="dresscode">
-                <img class="icon" src="/img/wedding-icon.webp" alt="">
-                <h3>Dresscode</h3>
-                <h5>Creativo Formal & PILETA</h5>
-                <p>Sé tu mejor versión de tu mejor versión</p><br>
+                <a class="btn" href="https://maps.app.goo.gl/UWVHnTXCEhZe137T8?g_st=aw">Ubicación</a><br>
             </div>
-            <div id="itinerario" class="asistencia">
-                <img class="icon" src="/img/PARTY-icon.webp" alt="">
+            <div class="dresscode">
+                <img class="icon" src="/img/wedding-icon.webp" alt="Icono Dresscode">
+                <h3>Dresscode</h3>
+                <h5>Creativo Formal & Pileta</h5>
+                <p>Sé tu mejor versión de tu mejor versión</p>
+            </div>
+            <div id="asistencia" class="asistencia">
+                <img class="icon" src="/img/PARTY-icon.webp" alt="Icono Party">
                 <h3>Confirmá tu asistencia</h3>
-                <p>Antes del 10 de Noviembre</p>
+                <p>Antes del 10 de Noviembre</p><br>
             </div>
                 <iframe class="form" data-tally-src="https://tally.so/embed/Xxa8Wz?hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" title=""></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
         </section>
